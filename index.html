@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video-player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-page">
+        <div class="video">
+            <video loop controls id='video-player' src="videos/sample-video.mp4"></video>
+        </div>
+        <div class="controls">
+            <!-- <div id="play_pause" class='play'></div> -->
+            <div class="right_skip"></div>
+            <div class="left_skip"></div>
+            <!-- <div class="control_down_pannel">
+                <div id="small_play_pause" class='small_play'></div>
+                <input type="range" class='volume' min="0" max="1" step="0.01" value="1">
+                <div class="time"><span class="current">0:00</span> / <span class="duration">0:00</span>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src="js/controls.js"></script>
+</body>
+</html>

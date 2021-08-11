@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.full-page{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.pause{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 0px 15px;
+}
+
+.play{
+    height: 50px;
+    width: 50px;
+    border-top: 25px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left:50px solid white;
+}
+
+.small_play{
+    height: 16px;
+    width: 16px;
+    border-top: 8px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 16px solid white;
+}
+
+.small_pause{
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 0px 5px;
+}
+
+video{
+    height: 100vh;
+    width: 100%;
+}
+
+#play_pause{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);  
+}
+
+.control_down_pannel{
+    position: absolute;
+    bottom: 0px;
+    height: 30px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.time{
+    color: white;
+}
+
+.right_skip{
+    background-color: rgba(255, 255, 255, 0);
+    height: 100vh;
+    width: 40vw;
+    position: absolute;
+    right: 0px;
+    bottom: 20vh;
+}
+
+.left_skip{
+    background-color: rgba(255, 255, 255, 0);
+    height: 100vh;
+    width: 40vw;
+    position: absolute;
+    left: 0px;
+    bottom: 20vh;
+}
+
