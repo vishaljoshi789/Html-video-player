@@ -9,13 +9,23 @@
 </head>
 <body>
     <div class="full-page">
+        
         <div class="video">
-            <video loop controls id='video-player' src="videos/sample-video.mp4"></video>
+            <video autoplay id='video-player' src="videos/sample-video.mp4"></video>
         </div>
+        
         <div class="controls">
             <!-- <div id="play_pause" class='play'></div> -->
             <div class="right_skip"></div>
             <div class="left_skip"></div>
+            <div class="skip_ad"></div>
+            <div class="resolution_selector">
+                <select name="resolution" id="resolution">
+                    <option value="720">720</option>
+                    <option value="480">480</option>
+                    <option value="360">360</option>
+                </select>
+            </div>
             <!-- <div class="control_down_pannel">
                 <div id="small_play_pause" class='small_play'></div>
                 <input type="range" class='volume' min="0" max="1" step="0.01" value="1">
