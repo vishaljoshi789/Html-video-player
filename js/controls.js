@@ -93,7 +93,7 @@ skip_ad.addEventListener('click',()=>{
     if(skip_ad.innerHTML == `Skip ad`){
             video_player.src = 'videos/sample-video2.mp4'
             video_player.controls = 'True'
-            skip_ad.innerHTML = ``
+            skip_ad.style.display = 'none'
             resolution_selector.style.opacity = '1'
             setTimeout(() => {
                 resolution_selector.style.opacity = 0
@@ -111,7 +111,7 @@ video_player.addEventListener('timeupdate',()=>{
     if(video_player.currentTime == video_player.duration){
             video_player.src = 'videos/sample-video2.mp4'
             video_player.controls = 'True'
-            skip_ad.innerHTML = ``
+            skip_ad.style.display = 'none'
             resolution_selector.style.opacity = '1'
             setTimeout(() => {
                 resolution_selector.style.opacity = 0
